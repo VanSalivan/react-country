@@ -12,8 +12,6 @@ export const HomePage = ({ countries, setCountries }) => {
   const [filtredCountries, setFiltredCountries] = useState(countries);
   const { push } = useHistory();
 
-  console.log(filtredCountries)
-
   const handleSearch = (search, region) => {
     let data = [...countries];
 
@@ -31,16 +29,16 @@ export const HomePage = ({ countries, setCountries }) => {
   useEffect(() => {
     if (!countries.length) {
       axios.get(ALL_COUNTRIES).then(({ data }) => setCountries(data));
-    } else {
-      setFiltredCountries(countries)
     }
 
     // eslint-disable-next-line
-  }, [countries]);
+  }, []);
 
-  // useEffect(() => {
-  //   handleSearch();
-  // }, [countries]);
+  useEffect(() => {
+    handleSearch();
+
+    // eslint-disable-next-line
+  }, [countries]);
 
   return (
     <>
