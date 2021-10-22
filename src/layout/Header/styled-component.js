@@ -23,7 +23,7 @@ const ModeSwitcher = styled.div`
   color: var(--colors-text);
   font-size: var(--fs-sm);
   text-transform: capitalize;
-  cursos: pointer;
+  cursor: pointer;
 `;
 
 export { HeaderEl, Wrapper, Title, ModeSwitcher }

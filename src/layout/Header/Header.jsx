@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { IoMoonOutline, IoMoon } from 'react-icons/io5';
 
 import Container from '../Container';
 import { HeaderEl, Wrapper, Title, ModeSwitcher } from './styled-component';
-import { IoMoonOutline, IoMoon } from 'react-icons/io5';
+import { useLocalStorage } from '../../services/useLocalStorage';
 
 export const Header = () => {
   // Базовый функционал с темизацией
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useLocalStorage('light', 'theme')
 
   const toggleTheme = () => setTheme(theme === 'light' ? 'dark' : 'light');
 
