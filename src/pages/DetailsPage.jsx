@@ -6,6 +6,8 @@ import { IoArrowBack } from 'react-icons/io5';
 
 import Info from '../components/Info';
 import { searchByCountry } from '../config';
+import SkeletonDetails from '../components/Skeletons/SkeletonDetails';
+import { Wrapper } from '../components/Info/styled-components';
 
 const Button = styled.button`
   display: flex;
@@ -37,7 +39,13 @@ export const DetailsPage = () => {
       <Button onClick={goBack}>
         <IoArrowBack /> Back
       </Button>
-      {country && <Info push={push} {...country} />}
+      {!country ? (
+        <Wrapper>
+          <SkeletonDetails />
+        </Wrapper>
+      ) : (
+        <Info push={push} {...country} />
+      )}
     </div>
   );
 };
