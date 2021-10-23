@@ -1,6 +1,6 @@
 {
   "name": "country",
-  "home": "https://vansalivan.github.io/React_country/",
+  "homepage": "https://vansalivan.github.io/React_country",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

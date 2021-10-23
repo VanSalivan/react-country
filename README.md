@@ -4,7 +4,7 @@
 
 ![Screenshot](example.png)
 
-Технологии: `React / styled components / react-router-dom/ react-select`
+Технологии: `React / styled components / react-router-dom / react-select`
 
 ### Функционал
 
