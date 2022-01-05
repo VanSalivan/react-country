@@ -7,7 +7,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename='/React_country'>
+    <BrowserRouter basename='/react-country'>
       <App />
     </BrowserRouter>
   </React.StrictMode>,

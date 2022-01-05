@@ -1,4 +1,4 @@
-## React Country # [demo](https://vansalivan.github.io/React_country/)
+## React Country # [demo](https://vansalivan.github.io/react-country/)
 
 Тренировочный проект по технологии React, styled components работы с API и созданию темной и светлой темы приложения.
 
